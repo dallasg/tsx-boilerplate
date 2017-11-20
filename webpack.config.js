@@ -1,22 +1,21 @@
 module.exports = {
-    entry: "./src/index.tsx",
+    entry: './src/index.tsx',
     output: {
-        filename: "./dist/bundle.js",
+        filename: './dist/bundle.js'
     },
-    devtool: "source-map",
+    devtool: 'source-map',
     resolve: {
-        extensions: ["", ".webpack.js", ".web.js", ".ts", ".tsx", ".js"]
+        extensions: ['.ts', '.tsx', '.js', '.json']
     },
     module: {
-        loaders: [
-            { test: /\.tsx?$/, loader: "ts-loader" }
-        ],
-        preLoaders: [
-            { test: /\.js$/, loader: "source-map-loader" }
+        rules: [
+            { test: /\.tsx?$/, loader: 'awesome-typescript-loader' },
+            { enforce: 'pre', test: /\.js$/, loader: 'source-map-loader' }
         ]
     },
     externals: {
-        "react": "React",
-        "react-dom": "ReactDOM"
-    },
-};
+        'react': 'React',
+        'react-dom': 'ReactDOM',
+        'jquery': '$'
+    }
+}

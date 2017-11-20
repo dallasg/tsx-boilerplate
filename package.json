@@ -1,14 +1,21 @@
 {
-  "name": "proj",
-  "version": "1.0.0",
-  "dependencies": {
-    "react": "^15.3.2",
-    "react-dom": "^15.3.2"
-  },
-  "devDependencies": {
-    "source-map-loader": "^0.1.5",
-    "ts-loader": "^0.8.2",
-    "webpack": "^1.13.2",
-    "webpack-dev-server": "^1.16.1"
-  }
+    "name": "tsx-boilerplate",
+    "version": "1.0.0",
+    "description": "",
+    "dependencies": {
+        "@types/jquery": "^3.2.16",
+        "@types/react": "^16.0.24",
+        "@types/react-dom": "^16.0.3",
+        "bootstrap": "^3.3.7",
+        "jquery": "^3.2.1",
+        "react": "^16.1.1",
+        "react-dom": "^16.1.1"
+    },
+    "devDependencies": {
+        "awesome-typescript-loader": "^3.3.0",
+        "source-map-loader": "^0.2.3",
+        "typescript": "^2.6.1",
+        "webpack": "^3.8.1",
+        "webpack-dev-server": "^2.9.4"
+    }
 }
